@@ -32,6 +32,8 @@
 @media all and (max-width: 670px) {
   .menu-icon{
     display:block;
+    font-size:24px;
+    line-height:65px;
   }
   
   .header-right{
@@ -40,12 +42,12 @@
   
   .top-wrapper h1{
     font-size:24px;
-    text-align:left;
+    text-align:center;
   }
   
   .top-wrapper p{
-    font-size:14px;
-    text-align:left;
+    font-size:12px;
+    text-align:center;
   }
   
   .container{
@@ -72,6 +74,14 @@
  
  .message{
    width:100%;
+ }
+ 
+ .message-wrapper h2{
+   font-size:14px  
+ }
+ 
+ .message-wrapper h3{
+   font-size:11px
  }
   
 }
