@@ -32,8 +32,6 @@
 @media all and (max-width: 670px) {
   .menu-icon{
     display:block;
-    font-size:24px;
-    line-height:65px;
   }
   
   .header-right{
