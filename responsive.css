@@ -31,7 +31,7 @@
 
 @media all and (max-width: 670px) {
   .menu-icon{
-    display:block;
+    display:inline-block;
   }
   
   .header-right{
