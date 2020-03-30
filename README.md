@@ -1,1 +1,0 @@
-# watanabedaigo.github.io
