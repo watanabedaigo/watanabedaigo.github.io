@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Practice</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 <body>
+    <h1><span class="fas fa-yen-sign"></span>Who pays<span class="fas fa-yen-sign"></span></h1>
+    <div class="rule"></div>
+      <p class="title">ルール</p>
+      <ul>
+          <li>1.数字を選ぶ順番を決める</li>
+          <li>2.交互に数字を選んでいく</li>
+          <li>3.Pay!を当てた人が支払う</li>
+      </ul>
+      
     <script>
         'use strict';
-        const num=5;
-        const winner=Math.floor(Math.random()*num);
+        const num=13;
+        const payman=Math.floor(Math.random()*num);
 
 
-        for(let i=0;i<num;i++){
+        for(let i=1;i<num;i++){
         const div = document.createElement('div');
         div.classList.add('box');
         div.textContent=i;
         div.addEventListener('click',()=>{
-            if(i===winner){
-                div.textContent='Win!';
-                div.classList.add('win');
+            if(i===payman){
+                div.textContent='Pay!';
+                div.classList.add('pay');
             }else{
-                div.textContent='Lose!';
-                div.classList.add('lose');
+                div.textContent='Not Pay!!';
+                div.classList.add('notpay');
 
             }
         });
